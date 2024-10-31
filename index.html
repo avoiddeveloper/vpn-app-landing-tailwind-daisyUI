@@ -13,7 +13,59 @@
 </head>
 <body class="font-rubik">
 
-    <h1>Hello World</h1>
+    <!-- Header -->
+    <header class="container mx-auto">
+        <!-- Navbar Part -->
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <a class="btn btn-ghost text-xl">
+                    <img src="assets/Logo.png" alt="Logo">
+                  </a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 text-base text-light">
+                    <li><a>About</a></li>
+                    <li><a>Features</a></li>
+                    <li><a>Pricing</a></li>
+                    <li><a>Testimonials</a></li>
+                    <li><a>Help</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end space-x-4">
+                    <a href="#" class="hidden md:flex btn bg-transparent border-none shadow-none hover:bg-transparent hover:text-theme-primary ">Sign In</a>
+
+                    <a class="hidden md:flex btn bg-transparent border-2 border-theme-primary rounded-full text-theme-primary hover:bg-theme-primary hover:text-white ">Sign Up</a>
+                    <!-- Dropdown -->
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M4 6h16M4 12h8m-8 6h16" />
+                          </svg>
+                        </div>
+                        <ul
+                          tabindex="0"
+                          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+                            <li><a>About</a></li>
+                            <li><a>Features</a></li>
+                            <li><a>Pricing</a></li>
+                            <li><a>Testimonials</a></li>
+                            <li><a>Help</a></li>
+                        </ul>
+                    </div>
+                </div>
+              </div>
+        </nav>
+    </header>
     
 
 
@@ -26,6 +78,9 @@
         extend: {
           colors: {
             clifford: '#da373d',
+            'theme-primary': '#F53855',
+            title: '#0B132A',
+            'light': '#4F5665',
           },
           fontFamily: {
             rubik: ['Rubik', 'sans-serif']
